@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>عربة التسوق</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>...نفس الهيدر...</header>
+    <main>
+        <h1>عربة التسوق</h1>
+        <div id="cart-items"></div>
+    </main>
+    <footer>...نفس الفوتر...</footer>
+    <script>
+        // عرض محتوى العربة من localStorage
+        const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+        const container = document.getElementById("cart-items");
+        if (cartItems.length === 0) {
+            container.innerHTML = "<p>العربة فارغة.</p>";
+        } else {
+            container.innerHTML = cartItems.map(item => `
+                <div>
+                    <img src="${item.image}" alt="${item.name}" width="100">
+                    <h3>${item.name}</h3>
+                    <p>${item.price} درهم × ${item.quantity}</p>
+                </div>
+            `).join('');
+        }
+    </script>
+</body>
+</html>
