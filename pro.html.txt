@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر المنتجات الطبيعية المغربية</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="متجر المنتجات الطبيعية المغربية">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="products.html">المنتجات</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+                <li><a href="account/login.html">تسجيل الدخول</a></li>
+                <li><a href="cart.html">عربة التسوق</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>اكتشف جمال الطبيعة المغربية</h1>
+            <p>منتجات طبيعية 100% من أفضل مصادر المغرب</p>
+            <a href="products.html" class="btn">تصفح المنتجات</a>
+        </section>
+
+        <section class="featured-categories">
+            <h2>أقسام المتجر</h2>
+            <div class="categories-grid">
+                <a href="categories/argan-oil.html" class="category-card">
+                    <img src="images/products/argan-oil.jpg" alt="زيت الأركان">
+                    <h3>زيت الأركان</h3>
+                </a>
+                <a href="categories/ghassoul.html" class="category-card">
+                    <img src="images/products/ghassoul.jpg" alt="الغاسول المغربي">
+                    <h3>الغاسول المغربي</h3>
+                </a>
+                <a href="categories/rose-water.html" class="category-card">
+                    <img src="images/products/rose-water.jpg" alt="ماء الورد">
+                    <h3>ماء الورد</h3>
+                </a>
+                <!-- باقي الأقسام -->
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <h2>منتجات مميزة</h2>
+            <div class="products-grid">
+                <!-- سيتم ملؤها بجافاسكريبت -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="products.html">المنتجات</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>وسائل التواصل</h3>
+                <ul>
+                    <li>البريد الإلكتروني: info@moroccan-natural.com</li>
+                    <li>الهاتف: +212 6 12 34 56 78</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 متجر المنتجات الطبيعية المغربية. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>
